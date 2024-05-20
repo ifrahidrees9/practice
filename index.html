@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="icons\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons\favicon-16x16.png">
+    <link rel="manifest" href="icons\site.webmanifest">
+
+    <title>Home</title>
+</head>
+<body>
+
+	     <!--HEADER-->
+	<div id="header-placeholder"></div>
+  
+   
+      <!--LANDING-->
+      <div class="landing">
+        
+        
+        <div class="content" id="content">
+            <h2 id="heading">
+                Savor the Flavor, Explore Culinary Delights
+            </h2>
+            <p id="paragraph"> 
+                Welcome to Delish, where culinary excellence meets your cravings! Dive into a world of mouthwatering recipes, tantalizing flavors, and culinary inspiration. 
+            </p>
+            <a href="login.html">Get Started!</a>
+        </div>
+        <div class="content" id="pic">
+            <img src="icons\top-view-mushed-potato-dish-with-tomato-sauce-greens-dark_140725-104303-removebg-preview.png" alt="" >
+           
+        </div>
+        
+    </div>
+
+      <!--CAROUSEL SLIDER-->
+      <div class="slider-heading">
+        <h1 >Indulge in Visual Delights</h1></div>
+      <div class="slider">
+       
+      <div class="slide-container">
+	
+        <div class="slides">
+            <img src="icons\img2.jpg" class=" carousel-image active">
+            <img src="icons\img3.jpg" class=" carousel-image">
+            <img src="icons\img1.jpg" class=" carousel-image">
+            <img src="icons\img5.webp" class=" carousel-image">
+            <img src="icons\img6.jpg" class=" carousel-image">
+        </div>
+    
+        <div class="buttons">
+            <span class="next">&#10095;</span>
+            <span class="prev">&#10094;</span>
+        </div>
+    
+        <div class="dotsContainer">
+            <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+            <div class="dot" attr='1' onclick="switchImage(this)"></div>
+            <div class="dot" attr='2' onclick="switchImage(this)"></div>
+            <div class="dot" attr='3' onclick="switchImage(this)"></div>
+            <div class="dot" attr='4' onclick="switchImage(this)"></div>
+        </div>
+    
+    </div>
+    </div>
+
+
+	      <!--NAV TAB-->
+		  <div class="navtab-body">
+		  <div class="hero">
+			<div class="btn-box">
+			<button id="nav-btn1" onclick="openTrend()" class="nav-btn active"><i class="fa fa-solid fa-spinner"></i>Trending</button>
+			<button id="nav-btn2" onclick="openSeason()" class="nav-btn"><i class="fa fa-solid fa-wind"></i>Seasonal</button>
+			<button id="nav-btn3" onclick="openQuick()" class="nav-btn"><i class="fa fa-solid fa-gauge-high"></i>Quick & Easy</button>
+			<button id="nav-btn4" onclick="openEvent()" class="nav-btn"><i class="fa fa-regular fa-calendar-days"></i>Events</button>
+			<button id="nav-btn5" onclick="openReview()" class="nav-btn"><i class="fa fa-solid fa-magnifying-glass"></i>Reviews</button>
+		  </div>
+	  
+	  
+		  <div id="nav-content1" class="nav-content">
+			  <div class="nav-content-left">
+				  <h1>Stay Ahead of the Culinary Curve! </h1>
+				  <p>Discover what's hot in the world of food with our Trending section. Here, you'll find the latest food trends, viral recipes, and popular dishes that are taking the culinary world by storm. From innovative cooking techniques to must-try ingredients, keep your kitchen on the cutting edge with Delish.
+				  </p>
+				  <a href="login.html">Start Here!</a>
+			  </div>
+			  <div class="nav-content-right">
+				  <img src="icons\nav1.png" alt="">
+	  
+			  </div>
+		  </div>
+	  
+		  <div id="nav-content2" class="nav-content">
+			  <div class="nav-content-left">
+				  <h1>Celebrate the Flavors of Every Season!</h1>
+				  <p>Our Seasonal section offers recipes and meal ideas perfect for every time of the year. Whether you're looking for light and refreshing dishes for summer, hearty comfort food for winter, or festive treats for the holidays, you'll find it all here. Enjoy the best of seasonal produce and celebrate the unique flavors each season has to offer.</p>
+				  <a href="login.html">Start Here!</a>
+			  </div>
+			  <div class="nav-content-right">
+				  <img src="icons\nav2.png" alt="">
+	  
+			  </div>
+		  </div>
+	  
+		  <div id="nav-content3" class="nav-content">
+			  <div class="nav-content-left">
+				  <h1>Delicious Meals in a Flash!</h1>
+				  <p>Our Quick & Easy section is perfect for busy cooks who want to create tasty meals without spending hours in the kitchen. From speedy weeknight dinners to simple lunches, these recipes are designed to save you time while still delivering delicious results. Perfect for those hectic days when you need a great meal fast.
+				  </p>
+				  <a href="login.html">Start Here!</a>
+			  </div>
+			  <div class="nav-content-right">
+				  <img src="icons\nav3.png" alt="">
+	  
+			  </div>
+		  </div>
+	  
+		  <div id="nav-content4" class="nav-content">
+			  <div class="nav-content-left">
+				  <h1>Perfect Menus for Every Occasion!</h1>
+				  <p>Planning a special event or holiday celebration? Our Events section provides curated menus and recipe ideas for birthdays, Christmas, Thanksgiving, parties, and more. Impress your guests with thoughtfully selected dishes that make every occasion memorable and delicious.</p>
+				  <a href="login.html">Start Here!</a>
+			  </div>
+			  <div class="nav-content-right">
+				  <img src="icons\nav5.png" alt="">
+	  
+			  </div>
+		  </div>
+	  
+		  <div id="nav-content5" class="nav-content">
+			  <div class="nav-content-left">
+				  <h1>Make Informed Choices! </h1>
+				  <p>Read comprehensive reviews of kitchen gadgets, cookware, and food products in our Reviews section. Get honest insights and recommendations to help you choose the best tools and ingredients for your culinary adventures. From the latest tech to tried-and-true essentials, make every purchase with confidence.</p>
+				  <a href="login.html">Start Here!</a>
+			  </div>
+			  <div class="nav-content-right">
+				  <img src="icons\nav4.png" alt="">
+	  
+			  </div>
+		  </div>
+	  
+	  </div>
+	  </div>
+	  
+
+      <!--ACCORDION-->
+      
+
+      <div class="accordion-body">
+      <div class="accordion-container">
+		<h1 class="tittle">Explore Delicious Recipes</h1>
+		<main class="accordion">
+			<div class="faq-img">
+				<img src="icons\top-view-yummy-sweet-cookies-with-candies-white_140725-53108-removebg-preview.png" alt="" class="accordion-img">
+			</div>
+			<div class="content-accordion">
+				<div class="question-answer">
+					<div class="question">
+						<h3 class="tittle-question">
+							Breakfast Delights
+						</h3>
+						<button class="question-btn">
+							<span class="up-icon">
+								<i class="fa-solid fa-chevron-up"></i>
+							</span>
+							<span class="down-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</button>
+					</div>
+					<div class="answer">
+						<p>Start your day off right with our collection of mouthwatering breakfast recipes. From fluffy pancakes to hearty omelets, we've got something to satisfy every morning craving.</p>
+					</div>
+				</div>
+				
+				<div class="question-answer">
+					<div class="question">
+						<h3 class="tittle-question">
+							Lunchtime Favorites
+						</h3>
+						<button class="question-btn">
+							<span class="up-icon">
+								<i class="fa-solid fa-chevron-up"></i>
+							</span>
+							<span class="down-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</button>
+					</div>
+					<div class="answer">
+						<p>Elevate your lunch game with our selection of quick and easy lunch recipes. Whether you're craving a light salad or a comforting bowl of soup, we've got plenty of options to keep your midday meals exciting.</p>
+					</div>
+				</div>
+				<div class="question-answer">
+					<div class="question">
+						<h3 class="tittle-question">
+							Dinner Sensations
+						</h3>
+						<button class="question-btn">
+							<span class="up-icon">
+								<i class="fa-solid fa-chevron-up"></i>
+							</span>
+							<span class="down-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</button>
+					</div>
+					<div class="answer">
+						<p>Impress your family and friends with our flavorful dinner recipes. From classic comfort foods to gourmet dishes, you'll find endless inspiration to spice up your evening meals.
+
+						</p>
+					</div>
+				</div>
+				<div class="question-answer">
+					<div class="question">
+						<h3 class="tittle-question">
+							Sweet Treats
+						</h3>
+						<button class="question-btn">
+							<span class="up-icon">
+								<i class="fa-solid fa-chevron-up"></i>
+							</span>
+							<span class="down-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</button>
+					</div>
+					<div class="answer">
+						<p>Indulge your sweet tooth with our irresistible dessert recipes. From decadent cakes to chewy cookies, satisfy your cravings with our collection of delectable treats.</p>
+					</div>
+				</div>
+				<div class="question-answer">
+					<div class="question">
+						<h3 class="tittle-question">
+							Healthy Eats
+						</h3>
+						<button class="question-btn">
+							<span class="up-icon">
+								<i class="fa-solid fa-chevron-up"></i>
+							</span>
+							<span class="down-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</button>
+					</div>
+					<div class="answer">
+						<p>Eat well and feel great with our assortment of healthy recipes. Discover nutritious meals packed with flavor, perfect for maintaining a balanced diet without sacrificing taste.</p>
+					</div>
+				</div>
+				<div class="question-answer">
+					<div class="question">
+						<h3 class="tittle-question">
+							Cooking Tips & Tricks
+						</h3>
+						<button class="question-btn">
+							<span class="up-icon">
+								<i class="fa-solid fa-chevron-up"></i>
+							</span>
+							<span class="down-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</button>
+					</div>
+					<div class="answer">
+						<p>Master the art of cooking with our expert tips and tricks. From knife skills to cooking techniques, elevate your culinary skills and become a kitchen pro in no time.</p>
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</div>
+</div>
+
+
+     <!--FOOTER-->
+<div id="footer-placeholder"></div>
+
+ 
+
+    <script src="home.js"></script>
+</body>
+</html>

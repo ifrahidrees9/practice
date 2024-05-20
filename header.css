@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+
+header {  
+    background-color:#6A735C ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 30px;
+    height: 55px;
+}
+header div img{
+    height: 45px;
+    width: 70px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 5px 13px;
+    margin: 10px;
+    border: 3px solid transparent;
+    font-weight: 500;
+    font-size: 19px;
+    text-decoration: none;  
+}
+.login{
+    background-color: #F2F2F2;
+    color: #6A735C;
+    padding: 2px 17px;
+    border-radius: 17px;
+    margin-top: 13px;
+}
+.login:hover{
+    background-color: #6A735C;
+    color: white;
+    border: solid 2px #F2F2F2 ;
+    font-weight: 500;
+  
+}
+header nav ul li a:hover{
+    font-weight: 550;
+    transform: scale(1.1);
+ 
+}
+header nav ul li a.active{
+    border-bottom-color: #F2F2F2;
+    
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #F2F2F2;
+}
+
+
+footer{
+    
+        background-color:#6A735C;
+        color: #F2F2F2;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        height: 40px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header{
+        padding: 2px 15px;
+    }
+    header nav {
+        position: absolute;
+        width: 70%;
+        left: -70%;
+        top: 58px;
+        background-color: #6A735C;
+        padding: 20px 98px 20px 30px;
+        transition: 0.3s;
+
+       
+    }
+    header #nav_check:checked ~ nav {
+        left: 0px;
+    
+    }
+   
+    header nav ul{
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+ 
+    header nav ul li a.active{
+        color: #6A735C;
+        background-color: #F2F2F2;
+        padding: 10px 100% 10px 13px; 
+       border-radius: 6px;
+       font-weight: 450;
+       transform: scale(1);
+    }   
+
+
+    footer{
+        height: 30px;
+        font-size: 14px;
+    }
+}
