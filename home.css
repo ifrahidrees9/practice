@@ -417,18 +417,18 @@ display: none;
     /*LANDING PAGE*/ 
     .landing{
         padding-top: 50px; 
-         height: 750px;
+         height: 780px;
 
     }
     
     #heading{
-    font-size: 10vw;
+    font-size: 30px;
     
 }
 #paragraph{
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
     
 }
     .content, #pic {
@@ -438,7 +438,7 @@ display: none;
     }
    
     #pic img {
-      margin-top: 230px;
+      margin-top: 150px;
       width: 450px;
       height: 250px;
       margin-left: 130px;
@@ -450,12 +450,15 @@ display: none;
 
 .slider-heading h1{
     padding: 40px 30px 0px 30px;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
 }
 
+.slider{
+  	min-height: 120px;
+}
 .slide-container{
-    margin: 30px 30px 10px 30px;
+    margin:30px;
     height: 350px; 
 }
 span.next, span.prev{ 
@@ -475,8 +478,8 @@ span.next:hover, span.prev:hover{
  /****  NAV TAB  *****/ 
 
  .hero {
-    height: 190vh;
-      margin: 30px 10px;
+    height: 95vh;
+      margin: 40px 10px;
   }
 
   .nav-btn {
@@ -498,13 +501,11 @@ span.next:hover, span.prev:hover{
   .nav-content {
     
       transition: 0.3s;
-      padding-top: 20px;
       width: 100%; 
-      
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      margin: 5px 5px;
+      margin: 5px auto;
       padding-top: 30px;
       
   }
@@ -530,7 +531,7 @@ span.next:hover, span.prev:hover{
   
   .nav-content-left a {
       display: inline-block; 
-      padding: 5px 5px;
+      padding: 7px 5px;
       font-size: 14px;
       margin: 10px auto;
       width: 120px;
@@ -548,13 +549,14 @@ span.next:hover, span.prev:hover{
 
 /***ACCORDION***/ 
 
+
 .accordion-body{
-    height: 250vh;
-    margin: 0 15px; 
+    height: 140vh;
+  
 }
 .accordion-container{
     background-color: #CED2C4;
-     margin:15px 0px;
+     margin:15px;
      padding: 50px 5px;
 }
 .accordion{
@@ -572,7 +574,7 @@ margin-right: 20px;
 }
 .accordion-img{
     position: relative;
-    margin-top: 520px;
+    margin-top: 550px;
     width: 300px;
     margin-left: 15px;
    
