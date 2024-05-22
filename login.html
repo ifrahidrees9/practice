@@ -4,65 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons\favicon-16x16.png">
+    <link rel="manifest" href="icons\site.webmanifest">
+
 </head>
 <body>
-    
 
+    <!--HEADER-->
     <div id="header-placeholder"></div>
+
+
+        <!--LOGIN-->
+      <div class="login-container">
+
+        <div class="wrapper">
+          <div class="icon-close">
+            <ion-icon name="close"></ion-icon>
+          </div>
+
+            <div class="form-box login">
+             <h2>Login</h2>
+             <form action="#">
+                
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+             </form>
+            </div>
+
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                   
+                   <div class="input-box">
+                       <span class="icon"><ion-icon name="person"></ion-icon></span>
+                       <input type="text" required>
+                       <label>Username</label>
+                   </div>
+                   <div class="input-box">
+                       <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                       <input type="email" required>
+                       <label>Email</label>
+                   </div>
+   
+                   <div class="input-box">
+                       <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                       <input type="password" required>
+                       <label>Password</label>
+                   </div>
+                   <div class="remember-forgot">
+                       <label><input type="checkbox"> 
+                    agree to the terms & conditions</label>
+                      
+                   </div>
+                   <button type="submit" class="btn">Register</button>
+                   <div class="login-register">
+                       <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                   </div>
+                </form>
+               </div>
+               
+        </div>
+
+      </div>
+
+
+    <!--FOOTER-->
     <div id="footer-placeholder"></div>
 
-    <script>
-        // Function to dynamically load the CSS
-        function loadCSS(href) {
-            var link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.type = "text/css";
-            link.href = href;
-            document.head.appendChild(link);
-        }
+   
 
-        // Load header and footer dynamically
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                // Create a temporary container to hold the loaded HTML
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = data;
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-                // Extract the header and footer content
-                const headerContent = tempDiv.querySelector('header').outerHTML;
-                const footerContent = tempDiv.querySelector('footer').outerHTML;
-
-                // Insert the header and footer content into the respective elements
-                document.getElementById('header-placeholder').innerHTML = headerContent;
-                document.getElementById('footer-placeholder').innerHTML = footerContent;
-
-                // Load the CSS dynamically
-                loadCSS('header.css');
-
-                // Call function to add active class after header content is loaded
-                addActiveClassToNavLink();
-            });
-
-        // Function to add active class to navigation links
-        function addActiveClassToNavLink() {
-            var currentUrl = window.location.href;
-
-            // Object to store page URLs and their corresponding navigation link IDs
-            var pageLinks = {
-                'index.html': 'homeLink',
-                'blog.html': 'blogLink',
-                'about.html': 'aboutLink',
-                'contact.html': 'contactLink',
-            };
-
-            // Iterate over the pageLinks object and add the 'active' class to the corresponding navigation link
-            for (var pageUrl in pageLinks) {
-                if (currentUrl.endsWith(pageUrl)) {
-                    document.getElementById(pageLinks[pageUrl]).classList.add('active');
-                }
-            }
-        }
-    </script>
 </body>
 </html>
